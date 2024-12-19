@@ -1,0 +1,9 @@
+dash
+dash-cytoscape
+pandas
+numpy
+plotly
+wordcloud
+textblob
+scikit-learn
+gunicorn
