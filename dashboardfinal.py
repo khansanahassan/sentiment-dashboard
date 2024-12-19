@@ -10,6 +10,10 @@ from textblob import TextBlob
 # Initialize the Dash app
 app = dash.Dash(__name__)
 
+import os
+print(f"PORT ENVIRONMENT VARIABLE: {os.environ.get('PORT')}")
+
+
 # Load Dataset
 dataset = pd.read_csv('file.csv')
 dataset['labels'] = dataset['labels'].map({'good': 'positive', 'bad': 'negative', 'neutral': 'neutral'})
